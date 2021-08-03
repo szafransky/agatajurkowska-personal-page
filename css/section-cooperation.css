@@ -1,0 +1,15 @@
+.container-cooperation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.decoration-bar {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: url('/Users/jakubroethel/Desktop/Agata/agatajurkowska-personal-page/img/Flag-United-Kingdom.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
