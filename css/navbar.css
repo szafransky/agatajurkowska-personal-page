@@ -1,5 +1,5 @@
 header {
-    background-color: white
+    background-color: white;
 }
 
 .navbar{
@@ -46,7 +46,6 @@ nav a:hover {
     padding: 0 10px;
     display: flex;
     justify-content: center;
-
     align-items: center;
     flex-wrap: wrap;
 
@@ -138,16 +137,20 @@ nav a:hover {
     display: none;
   }
 
+
 @media only screen and (max-width: 860px) {
+
 
     .navbar {
         width: 100%;
     }
 
     nav li {
+
         /* margin: 0 auto; */
         width: 100%;
         text-align: center;
+
     }
 
     .top-nav {
@@ -161,6 +164,7 @@ nav a:hover {
         transition: top 0.75s ease-in;
         background-color: white;
         top: 67px;
+
       }
       .top-nav .menu {
         list-style: none;
