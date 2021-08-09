@@ -2,14 +2,90 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+   
+}
+
+.section-cooperation {
+    min-height: calc(50vh - 150px);
 }
 
 .decoration-bar {
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     text-align: center;
     background: url('/Users/jakubroethel/Desktop/Agata/agatajurkowska-personal-page/img/Flag-United-Kingdom.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.decoration-bar h1 {
+    font-size: var(--title-font-size);
+    padding: 20px 0;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-flag {
+    border-radius: 50%;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: 700;
+    position: relative;
+    z-index: -2;
+
+}
+
+.gbr {
+    background: url('https://2.allegroimg.com/original/014c5b/5f4a93e74d35a5432b8d03c4e712/OFICJALNA-FLAGA-WIELKIEJ-BRYTANII-UK-ANGIELSKA-Temat-USA');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+.btn-flag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.350);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 860px) {
+
+    .btn-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-flag {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+
 }

@@ -19,3 +19,15 @@
 
 // let menuIcon = document.querySelector(".menu-icon");
 // console.log(menuIcon);
+
+let navCheckbox = document.querySelector("input.menu-btn");
+let menuLi = document.querySelectorAll(".menu li");
+
+console.log(navCheckbox);
+console.log(menuLi);
+
+menuLi.forEach(el => {
+	el.addEventListener("click", () => {
+		navCheckbox.checked = false;
+	});
+})

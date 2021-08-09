@@ -1,5 +1,6 @@
 header {
-    background-color: white
+
+    background-color: white;
 }
 
 .navbar{
@@ -132,11 +133,13 @@ nav a:hover {
     width: auto;
     max-height: none;
     flex-direction: row;
+    margin-bottom: 10px;
   }
 
   .top-nav .menu-icon {
     display: none;
   }
+
 
 @media only screen and (max-width: 860px) {
 
@@ -151,7 +154,7 @@ nav a:hover {
     }
 
     .top-nav {
-        position: fixed;
+        position: absolute;
         width: 100%;
         padding: 10px 10px 5px;
         display: flex;
