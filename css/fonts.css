@@ -3,8 +3,8 @@
 
 :root {
     --main-text-font: 'BenchNine';
-    --paragraph: 'Open Sans';
-    --paragraph-font-size: 16px;
+    --paragraph-font: 'Open Sans';
+    --paragraph-font-size: 18px;
     --title-font-size: 50px;
     --font-weight: 400;
     --title-color:#cb6e79;

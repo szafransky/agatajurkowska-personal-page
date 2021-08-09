@@ -131,6 +131,7 @@ nav a:hover {
     width: auto;
     max-height: none;
     flex-direction: row;
+    margin-bottom: 10px;
   }
 
   .top-nav .menu-icon {
@@ -139,7 +140,6 @@ nav a:hover {
 
 
 @media only screen and (max-width: 860px) {
-
 
     .navbar {
         width: 100%;
@@ -154,7 +154,7 @@ nav a:hover {
     }
 
     .top-nav {
-        position: fixed;
+        position: absolute;
         width: 100%;
         padding: 10px 10px 5px;
         display: flex;
@@ -164,7 +164,6 @@ nav a:hover {
         transition: top 0.75s ease-in;
         background-color: white;
         top: 67px;
-
       }
       .top-nav .menu {
         list-style: none;
