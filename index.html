@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <title>Agata Jurkowska</title>
 </head>
@@ -13,7 +14,6 @@
         <div class="navbar">
             <div class="logo">Agata Jurkowska</div>
             <nav class="top-nav" id="top-nav">
-               
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
 		        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu" id="menu">
@@ -28,20 +28,36 @@
 
         </div>
     </header>
+    <section class="section introduction">
+        <div class="introduction-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis voluptatum optio veritatis consequuntur nam voluptate inventore ab, itaque magnam culpa voluptatibus perferendis consequatur quas adipisci beatae soluta. Repellendus, dolore.
+            Eligendi est fuga excepturi atque non quam inventore blanditiis dolores exercitationem praesentium nihil consequatur dolorem natus nemo, voluptatem facere minima vitae doloribus sequi dolorum, cupiditate ex quibusdam magni? Porro, non?</p>
+        </div>
+        <div class="introduction-img"></div>
 
-    <section class="section section-cooperation">
-        <div class="container container-cooperation">
+    </section>
+
+    <section class=" section-cooperation">
+        <div class="container-cooperation">
             <div class="decoration-bar">
                 <h1>What is your need ?</h1>
             </div>
             <div class="btn-container">
-               <a href="#"><div class="btn btn-flag gbr">English Course</div></a>
-               <a href="#"><div class="btn btn-flag gbr">Individual Lessons</div></a>
-               <a href="#"><div class="btn btn-flag gbr">Job Interview Help</div></a>
-               <a href="#"><div class="btn btn-flag gbr">Translation</div></a>
+               <a href="#">
+                   <div class="btn-flag gbr">English Course</div>
+                </a>
+               <a href="#">
+                   <div class="btn-flag gbr">Individual Lessons</div>
+                </a>
+               <a href="#">
+                   <div class="btn-flag gbr">Job Interview Help</div>
+                </a>
+               <a href="#">
+                   <div class="btn-flag gbr">Translation</div>
+                </a>
             </div>
         </div>
-    </section> 
+    </section>
 
     <section class="section section-about">
         <h1>About me</h1>
@@ -58,12 +74,35 @@
                 Voluptate tempora vitae nobis sit tempore. Consequatur saepe voluptas minus numquam placeat illo beatae nulla. Voluptas totam ullam a, nam aut eius ducimus nostrum magnam nisi? Quia perspiciatis dolor temporibus?
                 Beatae nesciunt corrupti laudantium quaerat commodi. Quidem corrupti labore recusandae eos tempora voluptas blanditiis laudantium velit, a iste beatae deleniti. Praesentium suscipit architecto nam alias, repellendus minima pariatur tenetur aut!</p></div>
         </div>
-       
+    </section>
+    <section class=" section customer-opinion">
+        <h1>Klienci o współpracy ze Mną</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 
     <footer class="footer">
         <div class="footer-container">
-            <p>Made by Roethel x Szafrański</p>
+            <div>Made by Roethel x Szafrański</div>
             <div class="footer-logo">LOGO</div>
             <div class="footer-nav">
                 <a class="footer-link" href=#Home>Home/</a>
@@ -77,4 +116,5 @@
 </body>
 <script src="app.js"></script>
 <script src="js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html> 
