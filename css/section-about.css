@@ -4,7 +4,6 @@
 }
 
 .section-about h1 {
-    font-size: var(--title-font-size);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -26,12 +25,6 @@
 
 .about-me-description {
     flex: 3;
-}
-
-.about-me-description p{
-    line-height: 1.4;
-    font-weight: 200;
-    font-size: var(--paragraph-font-size);
 }
 
 

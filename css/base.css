@@ -1,0 +1,29 @@
+.section {
+    padding: 50px 50px;
+}
+
+p {
+    font-family: var(--main-text-font);
+    font-size: var(--paragraph-font-size);
+    color: var(--text-color);
+    line-height: var(--text-line-height);
+    font-weight: 200;
+}
+
+h1 {
+    font-family: var(--main-text-font);
+    font-size: var(--title-font-size) !important;
+    color: var(--title-color);
+}
+
+a {
+    text-decoration: none !important;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .section {
+        padding: 20px 20px;
+    }
+}
