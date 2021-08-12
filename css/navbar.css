@@ -43,7 +43,6 @@ nav a:hover {
 .top-nav {
    
     width: 80%;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +155,7 @@ nav a:hover {
     .top-nav {
         position: absolute;
         width: 100%;
-        padding: 10px 10px 5px;
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
