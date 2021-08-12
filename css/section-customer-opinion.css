@@ -24,7 +24,8 @@
 
     .customer-opinion h1 {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
+        padding: 0 20px;
     }
 
 }
