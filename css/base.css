@@ -24,7 +24,13 @@ a {
 
 @media only screen and (max-width: 600px) {
     .section {
-        padding: 20px 20px;
+        padding: 30px 20px 50px 20px;
+    }
+
+    h1 {
+        font-family: var(--main-text-font);
+        font-size: var(--title-font-size-mobile);
+        color: var(--title-color);
     }
 
     h1 {
