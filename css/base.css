@@ -12,12 +12,12 @@ p {
 
 h1 {
     font-family: var(--main-text-font);
-    font-size: var(--title-font-size) !important;
+    font-size: var(--title-font-size);
     color: var(--title-color);
 }
 
 a {
-    text-decoration: none !important;
+    text-decoration: none;
     
 }
 
@@ -25,5 +25,11 @@ a {
 @media only screen and (max-width: 600px) {
     .section {
         padding: 20px 20px;
+    }
+
+    h1 {
+        font-family: var(--main-text-font);
+        font-size: var(--title-font-size-mobile);
+        color: var(--title-color);
     }
 }
