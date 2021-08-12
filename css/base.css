@@ -32,4 +32,10 @@ a {
         font-size: var(--title-font-size-mobile);
         color: var(--title-color);
     }
+
+    h1 {
+        font-family: var(--main-text-font);
+        font-size: var(--title-font-size-mobile);
+        color: var(--title-color);
+    }
 }
