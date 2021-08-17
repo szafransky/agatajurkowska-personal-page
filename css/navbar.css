@@ -17,6 +17,7 @@ header {
     margin-top: 20px;
     font-size: 30px;
     margin-bottom: 20px; 
+    color: black;
 }
 
 .logo h4 {
@@ -129,7 +130,7 @@ nav a:hover {
     top: 0;
   }
 
-  
+
 
 
 
