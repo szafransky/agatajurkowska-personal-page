@@ -14,8 +14,15 @@ header {
 
 
 .logo {
-    font-size: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px; 
+    color: black;
+}
+
+.logo h4 {
+  text-align: center;
+  font-size: var(--paragraph-font-size);
 }
 
 nav ul {
@@ -43,7 +50,6 @@ nav a:hover {
 .top-nav {
    
     width: 80%;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +130,10 @@ nav a:hover {
     top: 0;
   }
 
+  
+
+
+
 
 
 
@@ -156,7 +166,7 @@ nav a:hover {
     .top-nav {
         position: absolute;
         width: 100%;
-        padding: 10px 10px 5px;
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -191,10 +201,11 @@ nav a:hover {
       .top-nav .menu li a:focus, .top-nav .menu li a:hover, .top-nav .menu li a:active {
         color: #20232d;
       }
-      .top-nav .logo {
-        display: inline-block;
-        width: 150px;
+      .logo {
+        font-size: 30px;
+        margin-bottom: 20px;
       }
+
       .top-nav .menu-icon {
         cursor: pointer;
         display: inline-block;

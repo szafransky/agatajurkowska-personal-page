@@ -2,3 +2,31 @@
     text-align: center;
 }
 
+.splide__list li {
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 860px) {
+
+    .splide__list li {
+        padding: 0 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .customer-opinion h1 {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+}
+
