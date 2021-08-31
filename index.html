@@ -113,36 +113,39 @@
 <script src="js/navbar.js"></script>
 <script src="js/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script>
-    function init() {
-    /*
-     * Variables preparation
-     */
-    let yourWrapperElement = document.getElementsByClassName("outer-wrapper")[0];
-    let whateverEaseFunctionYouWant = remaningScrollDistance => { return remaningScrollDistance / 15 + 1 };
 
-    //Added support for navbar menu's smooth scrolling
-    uss.hrefSetup();
-
-    /*
-     * As you asked for, we only apply the custom scrolling for desktop devices
-     * by using the "wheel" event instead of the "scroll" or "touchmove" events.
-     */
-    yourWrapperElement.addEventListener("wheel", event => {
-      /*
-       * We want to overwrite the default scrolling behaviour
-       * of your outer-wrapper component.
-       */
-      event.preventDefault();
-      event.stopPropagation();
-      uss.scrollXBy(event.deltaY, yourWrapperElement, null, false);             
-    }, {passive:false});
-
-    /*
-     * We apply a the custom ease function
-     * which will be used whenever our component is scrolled by the API
-     */
-    uss.setXStepLengthCalculator(whateverEaseFunctionYouWant, yourWrapperElement);
+<script type="text/javascript">
+  function init() {
+  /** 
+   * This API function, enables the anchors' 
+   * smooth-scrolling to the corresponding section
+   */
+  uss.hrefSetup();  
+  
+  /** 
+   * This version would prevent the stop-and-go effect you have when 
+   * you click the same anchor more than one time.
+   */
+  //uss.hrefSetup(null, null, () => {return !uss.isScrolling(window);});
+  
+  /**
+   * This API function, sets the easing of the window to a
+   * medium speed(the "QUART" part) ease-in-out function that last exactly 1 second.
+   */
+   uss.setStepLengthCalculator(
+      EASE_IN_OUT_QUART(2000), 
+      window //window is optional because it's the default value
+   ); 
+   
+   /**
+    * This API function allow us to stop the scrolling on a container.
+    * In this case, we don't want any more scrolling 
+    * if the user scrolls the document with the mousewheel.
+    */
+    window.addEventListener(
+          "wheel", 
+          () => uss.stopScrolling(window) //window is optional because it's the default value
+    ); 
 }
 </script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script> -->
