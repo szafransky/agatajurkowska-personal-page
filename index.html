@@ -112,31 +112,6 @@
 <script src="js/navbar.js"></script>
 <script src="js/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script>
-    function init() {
-    /*
-     * Variables preparation
-     */
-    let yourWrapperElement = document.getElementsByClassName("outer-wrapper")[0];
-    let whateverEaseFunctionYouWant = remaningScrollDistance => { return remaningScrollDistance / 15 + 1 };
-
-    //Added support for navbar menu's smooth scrolling
-    uss.hrefSetup();
-
-    /*
-     * As you asked for, we only apply the custom scrolling for desktop devices
-     * by using the "wheel" event instead of the "scroll" or "touchmove" events.
-     */
-    yourWrapperElement.addEventListener("wheel", event => {
-      /*
-       * We want to overwrite the default scrolling behaviour
-       * of your outer-wrapper component.
-       */
-      event.preventDefault();
-      event.stopPropagation();
-      uss.scrollXBy(event.deltaY, yourWrapperElement, null, false);             
-    }, {passive:false});
-
 <script type="text/javascript">
   function init() {
   /** 
