@@ -1,5 +1,8 @@
+body {
+    scroll-behavior: smooth;
+}
 .section {
-    padding: 50px 50px;
+    padding: 50px 180px;
 }
 
 p {
