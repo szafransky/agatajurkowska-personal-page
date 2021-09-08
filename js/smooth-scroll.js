@@ -1,30 +1,33 @@
-console.log('Element to scroll');
-console.log( $("a.scroll"));
+function init() {
+  /** 
+   * This API function, enables the anchors' 
+   * smooth-scrolling to the corresponding section
+   */
+  uss.hrefSetup();  
+  
+  /** 
+   * This version would prevent the stop-and-go effect you have when 
+   * you click the same anchor more than one time.
+   */
+  //uss.hrefSetup(null, null, () => {return !uss.isScrolling(window);});
+  
+  /**
+   * This API function, sets the easing of the window to a
+   * medium speed(the "QUART" part) ease-in-out function that last exactly 1 second.
+   */
+   uss.setStepLengthCalculator(
+      EASE_IN_OUT_QUART(600), 
 
-$(document).ready(function(){
-    // Add smooth scrolling to all links with the class scroll
-    console.log('Element to scroll');
-    console.log( $("a.scroll"));
-
-    $("a.scroll").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).top
-        }, 500, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
+      window //window is optional because it's the default value
+   ); 
+   
+   /**
+    * This API function allow us to stop the scrolling on a container.
+    * In this case, we don't want any more scrolling 
+    * if the user scrolls the document with the mousewheel.
+    */
+    window.addEventListener(
+          "wheel", 
+          () => uss.stopScrolling(window) //window is optional because it's the default value
+    ); 
+}
