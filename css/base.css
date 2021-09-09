@@ -26,8 +26,12 @@ a {
     color: white;
 }
 
+h3, h4 {
+    font-family: var(--main-text-font);
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 860px) {
     .section {
         padding: 30px 20px 50px 20px;
     }

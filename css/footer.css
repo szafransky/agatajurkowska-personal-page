@@ -1,6 +1,5 @@
 .footer {
-    background-color: #323232;
-    color: white;
+    background-color: black
 }
 
 .footer-container {
@@ -9,31 +8,120 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 70px;
+    height: 200px;
+}
+.logo-box {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.authors {
+    color: white;
+    font-family: text-font;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: var(--main-text-font);
+}
+.footer-logo{
+    color: white;
+    font-family: main-title-font;
+    font-size: 40px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-ico-box{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.contact-info {
+    margin: unset;
+    color: white;
+    font-family: text-font;
+    font-size: 15px;
 }
 
-
+.social-ico {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 7px;
+    margin-right: 10px;
+}
 
 .footer-link {
-    padding-right: 2px;
+    padding: 0 8px;
+    color: white;
+}
+.authors-mobile {
+    display: none;
+}
+
+.footer-logo .logo h3, .footer-logo .logo h4 {
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
+.footer-logo .logo h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 860px) {
     .footer {
-        font-size: 12px;
-        padding: 0px 20px;
+        width: 100%;
     }
 
     .footer-container {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: unset;
+        width: unset;
+        padding: 20px 0px;
     }
     .footer-logo {
         width: 150px;
         text-align: center;
+        font-size: 25px;
     }
 
-    
+    .authors-mobile{
+        display: block;
+        color: white;
+        font-size: 12px;
+
+    }
+    .authors{
+        display: none;
+    }
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    .contact-info{
+        font-size: 12px;
+    }
+    .footer-title {
+        font-size: 15px;
+    }
+    .social-ico-box {
+        padding-bottom: 40px;
+    }
+    .social-ico {
+        height: 30px;
+        width: 30px;
+    }
+
 
 }
-
