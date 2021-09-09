@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
 }
 
 
@@ -102,14 +103,12 @@
   position: relative;
   z-index: -2;
   height: 100px;
-}
-
-.gbr {
   background: url("../img/Flag-United-Kingdom.jpeg");
   background-position: center;
   background-size: cover;
   color: white;
 }
+
 
 .btn-flag::before {
   content: "";
@@ -122,6 +121,14 @@
   background: rgba(0, 0, 0, 0.35);
   z-index: -1;
   box-sizing: unset !important;
+}
+
+.single-coperation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
 }
 
 @media only screen and (max-width: 860px) {

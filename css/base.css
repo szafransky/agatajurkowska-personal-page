@@ -17,6 +17,8 @@ h1 {
     font-family: var(--main-text-font);
     font-size: var(--title-font-size);
     color: var(--title-color);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 a {
